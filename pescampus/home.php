@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>PESU Campus</title>
+<link rel="stylesheet" href="main.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+	<div class="navbar">
+	<a id="logo" href="home.php"><img src="images/logo.png" width="160px" height="28px"></a>
+  <a href="explore.html">Explore</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactus.html">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Blocks
+    </button>
+    <div class="dropdown-content">
+      <a href="ablock.html">MRD Block</a>
+      <a href="bblock.html">B Block</a>
+      <a href="cblock.html">Old Mech</a>
+      <a href="dblock.html">EEE Block</a>
+      <a href="eblock.html">Tech Park</a>
+      <a href="fblock.html">Panini</a>
+      <a href="gblock.html">G Block</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Hangouts
+    </button>
+   <div class="dropdown-content">
+      <a href="oat.html">Open Air Theatre</a>
+      <a href="studentlounge.html">Student Lounge</a>
+      <a href="pircube.html">Pi r-Cube</a>
+    </div>
+  </div>
+  <div id = "log" class="log" onClick="window.open('login.html','_self')">Log In</div>
+</div>
+
+	<?php
+
+	
+if(isset($_SESSION["username"]))
+
+{	echo "<script type = 'text/javascript'>alert ('Welcome!');</script>";
+	echo "<script type = 'text/javascript'>document.getElementById('log').textContent =  'Log Out';</script>";
+	
+}
+
+?>
+<img src="images/img_2001.png" name="slide" width="100%" height="750px" class="slideshow">
+  <script type="text/javascript">
+
+      var step=1
+      function slideit()
+      {
+      document.images.slide.src=eval("image"+step+".src");
+      if(step<8)
+      step++
+      else
+      step=1
+      setTimeout("slideit()",2500)
+      }
+      slideit()
+
+</script>
+    <div class="parallax">
+    	<div id="par">
+    	<br/>
+    	<br/>
+    	<br/>
+    	<p>Academic Blocks
+    	</p>
+    </div>
+    </div>
+			<a class="portlink" href="ablock.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_3282.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p style="font-size:11px ">M. R. Doreswamy Silver Jubilee</p>
+										<h2>A Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+								<a class="portlink" href="bblock.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_2005.jpg"/>
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Elements</p>
+										<h2>B Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+							<a class="portlink" href="cblock.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_2016.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Old Mech</p>
+										<h2>C Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+								<a class="portlink" href="dblock.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_2020.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>EEE</p>
+										<h2>D Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+								<a class="portlink" href="eblock.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_2008.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Tech Park</p>
+										<h2>E Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+								<a class="portlink" href="fblock.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_1998.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Panini</p>
+										<h2>F Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+							<a class="portlink" href="gblock.html" style="margin-left: 35.3%">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_1988.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Freshers'</p>
+										<h2>G Block</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+			<div class="parallax"><div id="par">
+    	<br/>
+    	<br/>
+    	<br/>
+    	<p>Popular Hangouts
+    	</p>
+    </div></div>
+			<a class="portlink" href="oat.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_2013.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<h2>Open Air Theatre</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+								<a class="portlink" href="studentlounge.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_2362.jpg"/>
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<h2>Student Lounge</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+							<a class="portlink" href="pircube.html">
+							<div class="box">
+								<div class="image fit">
+									<img class="portimg" src="images/img_1992.jpg" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<h2>Pi r-Cube</h2>
+									</header>
+								</div>
+							</div>
+							</a>
+								<br/>
+								<br/>
+								<br/>
+			<div id="footer">
+				<div class="copyright" float="left">
+					&copy; PES University. All rights reserved.
+				</div>
+				<div id="social">
+						<a href="tel:+918026724783" class="fa fa-phone"></a>
+						<a href="mailto:admissions@pes.edu" class="fa fa-envelope-o"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="https://www.facebook.com/pesuniversity/" target="_blank" class="fa fa-facebook"></a>
+				</div>
+			</div>
+</body>
+
+</html>

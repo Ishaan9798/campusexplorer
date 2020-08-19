@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>PESU Campus | Login</title>
+<link rel="stylesheet" href="login.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<script src="main.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="navbar">
+	<a id="logo" href="http://localhost/pescampus/home.php"><img src="images/logo.png" width="160px" height="28px"></a>
+  <a href="explore.html">Explore</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contactus.html">Contact Us</a>
+  <div class="dropdown">
+    <button class="dropbtn">Blocks
+    </button>
+    <div class="dropdown-content">
+      <a href="ablock.html">MRD Block</a>
+      <a href="bblock.html">B Block</a>
+      <a href="cblock.html">Old Mech</a>
+      <a href="dblock.html">EEE Block</a>
+      <a href="eblock.html">Tech Park</a>
+      <a href="fblock.html">Panini</a>
+      <a href="gblock.html">G Block</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Hangouts
+    </button>
+    <div class="dropdown-content">
+      <a href="oat.html">Open Air Theatre</a>
+      <a href="studentlounge.html">Student Lounge</a>
+      <a href="pircube.html">Pi r-Cube</a>
+    </div>
+  </div>
+  <div class="log" onClick="window.open('login.html','_self');">Log In</div>
+</div>
+<br/>
+<div id="loginb">
+	<h2>Log In</h2>
+	<form action="http://localhost/pescampus/login.php" method="POST">
+  <input type="text" name="username" placeholder="USN"><br/>
+  <input type="password" name="password" placeholder="Password"><br/>
+  <input type="submit" value="Login" id="sub">
+</form><!--<button id="tr" onClick="window.open('logintr.html','_self');">Trouble Logging In</button>-->
+<hr style="color:rgb(239,239,239);">
+<h2>Register</h2>
+	<form action="http://localhost/pescampus/register.php">
+  <input type="text" name="username" placeholder="USN"><br/>
+  <input type="password" name="password" placeholder="Password"><br/>
+  <input type="password" name="cpassword" placeholder="Confirm Password"><br/>
+  <input type="submit" value="Register" id="sub">
+</form>
+</div>
+<div id="footer">
+				<div class="copyright" float="left">
+					&copy; PES University. All rights reserved.
+				</div>
+				<div id="social">
+						<a href="tel:+918026724783" class="fa fa-phone"></a>
+						<a href="mailto:admissions@pes.edu" class="fa fa-envelope-o"></a>
+						<a href="#" class="fa fa-twitter"></a>
+						<a href="https://www.facebook.com/pesuniversity/" target="_blank" class="fa fa-facebook"></a>
+				</div>
+			</div>
+</body>
+</html>
